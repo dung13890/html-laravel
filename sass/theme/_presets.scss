@@ -1,0 +1,124 @@
+/*--------------------------------------------------------------
+Presets
+--------------------------------------------------------------*/
+
+$black: #000;
+$white: #fff;
+$color_body: #636363;
+$color_heading: #252525;
+$color_primary: #ffa200;
+$color_border: #ebebeb;
+$border_radius: 3px;
+
+// Transition
+$transition: all 0.4s;
+$transition_ease: all .3s ease-in-out;
+
+// Input, Select, Textarea colors
+$color_fields: #acacac;
+$color_placeholder: #acacac;
+$color_fields_background: #fff;
+
+// Dropdown
+$box_shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+$box_shadow_sticky: rgba(0, 0, 0, 0.0980392) 0px 0px 10px;
+$box_shadow_boxed: 0 0 10px rgba(0, 0, 0, 0.3);
+
+// Helper colors for form error states
+$color_disabled: #f4f4f4;
+$color_disabled_border: #f4f4f4;
+$color_error: #d20000;
+$color_error_bg: #fff8f8;
+$color_success: #19a340;
+$color_success_bg: #f8fff9;
+
+/* ------------------- Presets Style ------------------- */
+
+body {
+	color: $color_body;
+}
+
+a {
+    color: #444;
+    &:hover {
+	    color: $color_primary;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: $color_heading;
+    a {	   
+	    color: $color_heading;
+	    &:hover {
+		    color: $color_primary;
+		}
+	}
+}
+
+abbr[title] {
+    border-color: $color_border;
+}
+
+table, th, td {
+	border-color: $color_border;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+textarea,
+select {
+    border-color: $color_border;
+    color: $color_fields;
+    background-color: $color_fields_background;
+    @include transition($transition_ease);
+    &:focus {
+    	border-color: $color_primary;
+    }
+}
+
+.pagination,
+.entry-pagination,
+.post-navigation,
+.posts-navigation {
+    border-color: $color_border;
+}
+
+.load-more-pagination,
+.infinite-pagination {
+    .button {
+        &:hover {
+            background: $color_primary;
+        }
+    }
+}
+
+btn,
+.btn,
+button,
+.button,
+input.submit,
+input[type="submit"] {
+    color: $white;
+    border-color: #252525;
+    background-color: #252525;
+    &:hover {
+        color: $white;
+        border-color: $color_primary;
+        background: $color_primary;
+    }
+}

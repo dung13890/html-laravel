@@ -1,0 +1,98 @@
+@mixin transition($val) {
+    transition: $val;
+    -webkit-transition: $val;
+    -moz-transition: $val;
+    -o-transition: $val;
+    -ms-transition: $val;
+}
+
+@mixin border-radius($val) {
+    border-radius: $val;
+    -moz-border-radius: $val;
+    -o-border-radius: $val;
+    -webkit-border-radius: $val;
+    -ms-border-radius: $val;
+}
+
+@mixin transform($val) {
+    -webkit-transform: $val;
+    -moz-transform: $val;
+    -ms-transform: $val;
+    -o-transform: $val;
+    transform: $val
+}
+
+/* ------------------- Base: Keyframes ------------------- */
+@-webkit-keyframes spinner-bubble {
+    from {
+        width: 10px;
+        height: 10px;
+        opacity: .8;
+    }
+    to {
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+    }
+}
+
+@keyframes spinner-bubble {
+    from {
+        width: 10px;
+        height: 10px;
+        opacity: .8;
+    }
+    to {
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes circus {
+    0% {
+        @include transform(rotate(0deg))
+    }
+    50% {
+        @include transform(rotate(180deg))
+    }
+    100% {
+        @include transform(rotate(360deg))
+    }
+}
+
+@keyframes circus {
+    0% {
+        @include transform(rotate(0deg))
+    }
+    50% {
+        @include transform(rotate(180deg))
+    }
+    100% {
+        @include transform(rotate(360deg))
+    }
+}
+
+@-webkit-keyframes circus-back {
+    0% {
+        @include transform(rotate(0deg))
+    }
+    50% {
+        @include transform(rotate(-180deg))
+    }
+    100% {
+        @include transform(rotate(-360deg))
+    }
+}
+
+@keyframes circus-back {
+    0% {
+        @include transform(rotate(0deg))
+    }
+    50% {
+        @include transform(rotate(-180deg))
+    }
+    100% {
+        @include transform(rotate(-360deg))
+    }
+}

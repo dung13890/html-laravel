@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------
+Table
+--------------------------------------------------------------*/
+
+dt {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+td {
+    border-width: 0 1px 1px 0;
+}
+
+th {
+    border-width: 0 1px 1px 0;
+    font-weight: 700;
+}
+
+dd {
+    margin-bottom: 15px;
+}
+
+th,
+td {
+    padding: 1em;
+}
+
+caption,
+th,
+td {
+    font-weight: normal;
+    text-align: left;
+}
+
+table,
+th,
+td {
+    border-width: 1px;
+    border-style: solid;
+}
+
+thead {
+    th,
+    td {
+        border-bottom-width: 2px;
+        font-weight: bold;
+    }
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+    margin: 0 0 1.6em;
+    table-layout: fixed;
+    width: 100%;
+    
+    &.variations,
+    &.group_table,
+    &.shop_table {
+        border-spacing: 0;
+        border-collapse: separate;
+    }
+}

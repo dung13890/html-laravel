@@ -2,8 +2,9 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 
-var src = '/';
+var src = './';
 var input = src + 'sass/*.scss';
+var input_watch = src + 'sass/**/*.scss';
 var output = src + 'css/';
 
 var sassOptions = {
@@ -32,7 +33,7 @@ gulp.task('watch', function() {
   return gulp
     // Watch the input folder for change,
     // and run `sass` task when something happens
-    .watch(input, ['sass'])
+    .watch(input_watch, ['sass'])
     // When there is a change,
     // log a message in the console
     .on('change', function(event) {

@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------
+Buttons
+--------------------------------------------------------------*/
+
+btn,
+.btn,
+button,
+.button,
+input.submit,
+input[type="submit"] {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-width: 0;
+    border-style: solid;
+    border-radius: 0;
+    @include transition(all 0.4s);
+}
