@@ -3,6 +3,16 @@
   "version": "1.0.0",
   "description": "Website introduction about a company and products of the company.",
   "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.10",
+    "gulp-autoprefixer": "^3.1.1",
+    "bourbon": "^4.2.7",
+    "node-sass": "^3.10.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
