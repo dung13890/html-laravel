@@ -1,0 +1,19 @@
+{
+  "name": "toanmy-project",
+  "version": "1.0.0",
+  "description": "Website introduction about a company and products of the company.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenduytu3i/html-toanmy.git"
+  },
+  "author": "Dev-Group",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyenduytu3i/html-toanmy/issues"
+  },
+  "homepage": "https://github.com/nguyenduytu3i/html-toanmy#readme"
+}
