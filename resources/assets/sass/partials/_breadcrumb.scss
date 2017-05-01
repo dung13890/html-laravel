@@ -1,0 +1,16 @@
+/*--------------------------------------------------------------
+Breadcrumb
+--------------------------------------------------------------*/
+
+.breadcrumb {
+    margin: 0;
+    margin-top: 20px;
+	padding: 2px 10px;
+	border-radius: 3px;
+    li {
+        list-style: none;
+    }
+    .breadcrumb-separator {
+    	padding: 0 6px;
+    }
+}

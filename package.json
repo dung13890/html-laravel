@@ -1,31 +1,30 @@
 {
-  "name": "toanmy-project",
+  "name": "laravel-project",
   "version": "1.0.0",
   "description": "Website introduction about a company and products of the company.",
   "main": "gulpfile.js",
-  "dependencies": {
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp": "^3.9.1",
-    "gulp-watch": "^4.3.10",
-    "gulp-autoprefixer": "^3.1.1",
-    "bourbon": "^4.2.7",
-    "node-sass": "^3.10.1",
-    "gulp-sass": "^2.3.2"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nguyenduytu3i/html-toanmy.git"
+    "url": "git+https://github.com/nguyenduytu3i/html-laravel.git"
   },
   "author": "Kevin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nguyenduytu3i/html-toanmy/issues"
+    "url": "https://github.com/nguyenduytu3i/html-laravel/issues"
   },
-  "homepage": "https://github.com/nguyenduytu3i/html-toanmy#readme"
+  "homepage": "https://github.com/nguyenduytu3i/html-laravel#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-prettify": "^0.5.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2"
+  }
 }

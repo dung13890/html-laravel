@@ -1,0 +1,33 @@
+/* ------------------- Header: Main menu ------------------- */
+
+ul {
+	&.nav-horizontal {
+		> li {
+			display: inline-block;
+		}
+	}
+}
+.site-navigation {
+	background-color: #6b6b6b;
+	ul {
+		> li {
+			padding: 0;
+
+			> a {
+				line-height: 22px;
+				display: inline-block;
+				padding: 8px 20px;
+				color: #fff;
+				&:hover {
+					background-color: #829dab;
+				}
+			}
+
+			&.active {
+				> a {
+					background-color: #829dab;
+				}
+			}
+		}
+	}
+}

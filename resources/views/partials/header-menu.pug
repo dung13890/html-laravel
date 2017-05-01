@@ -1,0 +1,17 @@
+//- Mixin
+mixin navLink(link, active, name)
+	li.nav-item
+		a.nav-link(
+			href=link 
+			class={active: current === '#{active}'}
+		) !{name}
+
+//- Navigation
+nav.site-navigation
+	ul.main-menu.nav-horizontal
+		+navLink('index.html', 'index', 'Home')
+		+navLink('shop-categories.html', 'shop-categories', 'Shop Categories')
+		+navLink('shop-category.html', 'shopcategory', 'Shop Category')
+		+navLink('shop-single.html', 'shop-single', 'Shop Single')
+		+navLink('blog.html', 'blog', 'Blog')
+		+navLink('blog-single.html', 'blog-single', 'Blog Single')
