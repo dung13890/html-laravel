@@ -6,7 +6,7 @@ $black: #000;
 $white: #fff;
 $color_body: #636363;
 $color_heading: #252525;
-$color_primary: #ffa200;
+$color_primary: #829dab;
 $color_border: #ebebeb;
 $border_radius: 3px;
 
@@ -114,8 +114,8 @@ button,
 input.submit,
 input[type="submit"] {
     color: $white;
-    border-color: #252525;
-    background-color: #252525;
+    border-color: #6b6b6b;
+    background-color: #6b6b6b;
     &:hover {
         color: $white;
         border-color: $color_primary;

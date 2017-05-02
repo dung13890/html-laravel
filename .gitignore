@@ -2,8 +2,15 @@
 .DS_Store
 node_modules
 *.html
+public/css
+public/images
+public/js
+
 
 /.htaccess
+/public/css
+/public/images
+/public/js
 /license.txt
 /readme.html
 /sitemap.xml
