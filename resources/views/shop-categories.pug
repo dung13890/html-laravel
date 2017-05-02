@@ -1,31 +1,31 @@
 extends partials/layout
 
 mixin category(title, imageName, description)
-	.category.col-xs-12.col-sm-6.col-md-3.col-lg-3
-		.category-wrapper
-			img.category-img(
-				src="public/images/" + imageName
-			)
-			.category-content
-				h3.category-title #{title}
-				p.category-description #{description}
+    .category.col-xs-12.col-sm-6.col-md-3.col-lg-3
+        .category-wrapper
+            img.category-img(
+                src="public/images/" + imageName
+            )
+            .category-content
+                h3.category-title #{title}
+                p.category-description #{description}
 block main
-	include partials/breadcrumb
+    include partials/breadcrumb
 
-	h1.page-title Thiet bi phong tam
-	div.category-image
-		img(src="public/images/img-cat-01.jpg", alt="")
-	div.categories
-		div.row
-			+category('Sản Phẩm Mới', 'category-01.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
-			+category('Sản Phẩm Mới', 'category-02.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
-			+category('Sản Phẩm Mới', 'category-03.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
-			+category('Sản Phẩm Mới', 'category-04.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
-			+category('Sản Phẩm Mới', 'category-05.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
-			+category('Sản Phẩm Mới', 'category-06.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
-			+category('Sản Phẩm Mới', 'category-07.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
-			+category('Sản Phẩm Mới', 'category-08.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
-			+category('Sản Phẩm Mới', 'category-09.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
-			+category('Sản Phẩm Mới', 'category-10.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
-			+category('Sản Phẩm Mới', 'category-11.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
-			+category('Sản Phẩm Mới', 'category-12.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
+    h1.page-title Thiet bi phong tam
+    div.category-image
+        img(src="public/images/img-cat-01.jpg", alt="")
+    div.categories
+        div.row
+            +category('Sản Phẩm Mới', 'category-01.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
+            +category('Sản Phẩm Mới', 'category-02.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
+            +category('Sản Phẩm Mới', 'category-03.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
+            +category('Sản Phẩm Mới', 'category-04.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
+            +category('Sản Phẩm Mới', 'category-05.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
+            +category('Sản Phẩm Mới', 'category-06.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
+            +category('Sản Phẩm Mới', 'category-07.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
+            +category('Sản Phẩm Mới', 'category-08.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
+            +category('Sản Phẩm Mới', 'category-09.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
+            +category('Sản Phẩm Mới', 'category-10.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
+            +category('Sản Phẩm Mới', 'category-11.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
+            +category('Sản Phẩm Mới', 'category-12.jpg', 'Trang chủ / Thiết bị phòng tắm. KOHLER mang đến các thiết bị phòng tắm không chỉ đáp ứng các nhu cầu sử dụng đa dạng, mà còn mang đến nguồn cảm hứng bất tận giúp biến phòng tắm thành không gian mang phong cách của riêng bạn. KOHLER không ngừng sáng tạo để mang đến tiện nghi sống tinh tế, sang trọng cho ngôi nhà.')
