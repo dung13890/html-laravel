@@ -1,10 +1,12 @@
 *.log
 .DS_Store
 node_modules
+*.html
 
 /.htaccess
 /license.txt
 /readme.html
 /sitemap.xml
 /sitemap.xml.gz
+/*.html
 /npm-debug.log

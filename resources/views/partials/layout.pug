@@ -1,27 +1,27 @@
 block config
-	- var current = 'home'
-	- var pageTitle = 'Homepage.'
+    - var current = 'home'
+    - var pageTitle = 'Nanosi'
 
 doctype html
 html(lang="en")
-	head
-		meta(charset="UTF-8")
-		meta(name="viewport", content="width=device-width, initial-scale=1")
-		title= pageTitle
-		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i")
-		link(rel="stylesheet", href="./public/vendor/font-awesome/css/font-awesome.min.css")
-		link(rel="stylesheet", href="./public/vendor/bootstrap/css/bootstrap.min.css")
-		link(rel="stylesheet", href="./public/css/frontend.min.css")
-	body
-		div.site-page.container
-			div.site-wrap
-				include header
-				div.site-content
-					block main
-						// page content will come here.
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        title= pageTitle
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i")
+        link(rel="stylesheet", href="./public/vendor/font-awesome/css/font-awesome.min.css")
+        link(rel="stylesheet", href="./public/vendor/bootstrap/css/bootstrap.min.css")
+        link(rel="stylesheet", href="./public/css/frontend.min.css")
+    body
+        div.site-page.container
+            div.site-wrap
+                include header
+                div.site-content
+                    block main
+                        // page content will come here.
 
-				include footer
-			include footer-copyright
+                include footer
+            include footer-copyright
 
-		script(src='./public/js/jquery.min.js')
-		script(src='./public/js/frontend.min.js')
+        script(src='./public/js/jquery.min.js')
+        script(src='./public/js/frontend.min.js')
