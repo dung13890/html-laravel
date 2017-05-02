@@ -1099,8 +1099,8 @@ button,
 input.submit,
 input[type="submit"] {
   color: #fff;
-  border-color: #252525;
-  background-color: #252525;
+  border-color: #6b6b6b;
+  background-color: #6b6b6b;
 }
 
 btn:hover,
