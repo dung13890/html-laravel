@@ -1,28 +1,62 @@
 extends partials/layout
 
 block main
-    div#carousel-example-generic.carousel.slide
-        ol.carousel-indicators
-            each val in [0, 1]
-                if val == 0
-                    li(
-                        data-target='#carousel-example-generic'
-                        data-slide-to=val
-                        class='ind active'
-                    )
-                else
-                    li(
-                        data-target='#carousel-example-generic'
-                        data-slide-to=val
-                        class='ind'
-                    )
-        div.carousel-inner
-            each val in [0, 1, 2]
-                if val == 0
-                    div.item.active
-                        img(src="public/images/slide-01.jpg" alt="")
-                else
-                    div.item
-                        img(src="public/images/slide-02.jpg" alt="")
+    section#feature-area.feature-are
+        div#slide-show.carousel.slide
+            ol.carousel-indicators
+                each val in [0, 1]
+                    if val == 0
+                        li(
+                            data-target='#slide-show'
+                            data-slide-to=val
+                            class='ind active'
+                        )
+                    else
+                        li(
+                            data-target='#slide-show'
+                            data-slide-to=val
+                            class='ind'
+                        )
+            div.carousel-inner
+                each val in [0, 1, 2]
+                    if val == 0
+                        div.item.active
+                            img(src="public/images/slide-01.jpg" alt="")
+                    else
+                        div.item
+                            img(src="public/images/slide-02.jpg" alt="")
 
-    p is homepage
+    section#home-banner.home-banner
+        div.row
+            div.banner.col-xs-12.col-sm-3.col-md-3.col-lg-3
+                div.banner-image
+                    a(href="#")
+                        img(src="public/images/banner-11.jpg" alt="")
+                div.banner-content
+                    h4.banner-title
+                        a(href="#") Banner Title
+                    p.banner-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.banner.col-xs-12.col-sm-3.col-md-3.col-lg-3
+                div.banner-image
+                    a(href="#")
+                        img(src="public/images/banner-12.jpg" alt="")
+                div.banner-content
+                    h4.banner-title
+                        a(href="#") Banner Title
+                    p.banner-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.banner.col-xs-12.col-sm-3.col-md-3.col-lg-3
+                div.banner-image
+                    a(href="#")
+                        img(src="public/images/banner-13.jpg" alt="")
+                div.banner-content
+                    h4.banner-title
+                        a(href="#") Banner Title
+                    p.banner-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            div.banner.col-xs-12.col-sm-3.col-md-3.col-lg-3
+                div.banner-image
+                    a(href="#")
+                        img(src="public/images/banner-14.jpg" alt="")
+                div.banner-content
+                    h4.banner-title
+                        a(href="#") Banner Title
+                    p.banner-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

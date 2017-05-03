@@ -5,8 +5,9 @@ Presets
 $black: #000;
 $white: #fff;
 $color_body: #636363;
-$color_heading: #252525;
-$color_primary: #829dab;
+$color_heading: #111;
+$color_primary: #3498db;
+$color_second: #829dab;
 $color_border: #ebebeb;
 $border_radius: 3px;
 
@@ -58,7 +59,7 @@ h6,
 .h5,
 .h6 {
     color: $color_heading;
-    a {	   
+    a {
 	    color: $color_heading;
 	    &:hover {
 		    color: $color_primary;
@@ -112,13 +113,42 @@ btn,
 button,
 .button,
 input.submit,
-input[type="submit"] {
+input[type="submit"],
+.btn-default,
+.open>.dropdown-toggle.btn-default {
     color: $white;
-    border-color: #6b6b6b;
-    background-color: #6b6b6b;
-    &:hover {
+    border-color: $color_primary;
+    background-color: $color_primary;
+    &:hover,
+		&.active.focus,
+		&.active:focus,
+		&.active:hover,
+		&:active.focus,
+		&:active:focus,
+		&:active:hover,
+		&.focus,
+		&:focus {
         color: $white;
-        border-color: $color_primary;
-        background: $color_primary;
+        border-color: $color_second;
+        background: $color_second;
     }
+}
+
+/* Navigation */
+.site-navigation {
+	ul {
+		> li {
+			> a {
+				&:hover {
+					background-color: $color_primary;
+				}
+			}
+
+			&.active {
+				> a {
+					background-color: $color_primary;
+				}
+			}
+		}
+	}
 }

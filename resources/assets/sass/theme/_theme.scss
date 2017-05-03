@@ -14,9 +14,13 @@
     margin-left: -8px;
 }
 
+.dropdown-menu {
+    border: 0;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: normal;
 	line-height: 24px;
 	padding-top: 20px;
@@ -31,9 +35,15 @@ body {
 	background-color: #fff;
 }
 
-.header-action {
-    .input-group,
-    .header-button {
-        display: inline-block;
-    }
+section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  &.feature-area {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+/* Sextion - Slideshow */
+#slide-show {
+    margin-top: 15px;
 }

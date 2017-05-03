@@ -10,11 +10,18 @@ Shop
 	margin-top: 40px;
 }
 
-.category {
-	.category-img {
-		width: 100%;
-	}
+.category .category-img,
+.product .product-img {
+    width: 100%;
+		margin-bottom: 20px;
 }
+
+.category-title,
+.product-title {
+	font-size: 18px;
+	font-weight: 600;
+}
+
 /* ------------------- Single Product ------------------- */
 
 /* ------------------- Cart Page ------------------- */
