@@ -1,6 +1,6 @@
 @media (min-width: 1230px) {
     .container {
-        width: 1170px;
+        width: 990px;
     }
 }
 
@@ -29,4 +29,11 @@ body {
 	padding: 15px;
 	box-shadow: 0 0 5px rgba(97, 79, 79, 0.15);
 	background-color: #fff;
+}
+
+.header-action {
+    .input-group,
+    .header-button {
+        display: inline-block;
+    }
 }
