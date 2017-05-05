@@ -40,7 +40,7 @@ gulp.task('css:build', function() {
         .pipe(sourcemaps.init())
         .pipe(sass(sassOptions).on('Error', sass.logError))
         .pipe(gulp.dest(dest.css))
-        .pipe(cssnano())
+        .pipe(cssnano({zindex: false}))
         .pipe(rename({suffix: '.min'}))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(dest.css));
