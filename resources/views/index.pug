@@ -5,7 +5,50 @@ block main
         div#slides
             each val in [1, 2, 3, 4]
                 img(src="public/images/slide-0" + val + ".png" alt="")
-
+        .feature-area-collapse
+            #accordion.panel-group
+                .panel.panel-default
+                    .panel-heading
+                        h4.panel-title
+                            a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
+                                | Collapsible Group Item #1
+                    // /.panel-heading
+                    #collapseOne.panel-collapse.collapse.in
+                        .panel-body
+                            img(src='https://unsplash.it/290/100/?random')
+                            | Anim pariatur cliche reprehenderit
+                            a.see-more See More +
+                        // /.panel-body
+                    // /.panel-collapse
+                // /.panel
+                .panel.panel-default
+                    .panel-heading
+                        h4.panel-title
+                            a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo')
+                                | Collapsible Group Item #2
+                    // /.panel-heading
+                    #collapseTwo.panel-collapse.collapse
+                        .panel-body
+                            img(src='https://unsplash.it/290/100/?random')
+                            | Anim pariatur cliche reprehenderit
+                        // /.panel-body
+                    // /.panel-collapse
+                // /.panel
+                .panel.panel-default
+                    .panel-heading
+                        h4.panel-title
+                            a.collapsed(data-toggle='collapse', data-parent='#accordion', href='#collapseThree')
+                                | Collapsible Group Item #3
+                    // /.panel-heading
+                    #collapseThree.panel-collapse.collapse
+                        .panel-body
+                            img(src='https://unsplash.it/290/100/?random')
+                            | Anim pariatur cliche reprehenderit
+                        // /.panel-body
+                    // /.panel-collapse
+                // /.panel
+            // /.panel-group
+>>>>>>> wireframe Slider, Navigation, Footer
     section#home-banner.home-banner
         div.row
             div.banner.col-xs-12.col-sm-3.col-md-3.col-lg-3
@@ -40,3 +83,6 @@ block main
                     h4.banner-title
                         a(href="#") Banner Title
                     p.banner-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+                            
