@@ -35,7 +35,7 @@ Base
 /*--------------------------------------------------------------
 Header
 --------------------------------------------------------------*/
-
+@import "header/menu";
 @import "header/index";
 @import "header/topbar";
 @import "header/navigation";
@@ -56,3 +56,100 @@ Theme
 @import "theme/presets";
 @import "theme/responsive";
 @import "theme/custom";
+
+
+.feature-are {
+	margin-top:0;
+	padding-top:0;
+	position:relative;
+}
+
+.carousel.slide {
+	margin-top:0;
+	padding-top:0;
+}
+
+/*----------  Feature Area  ----------*/
+
+.feature-area-collapse {
+		position:absolute;
+		top:20px;
+		right:20px;
+		width: 320px;
+	 .panel-group, 
+	 .panel-group .panel, 
+	 .panel-group .panel-heading,
+	 .panel-group .panel-heading a,  
+	 .panel-group .panel-title,  
+	 .panel-group .panel-title a,  
+	 .panel-group .panel-body,
+	 .panel-group .panel-group .panel-heading + .panel-collapse > .panel-body  {
+	    border-radius:2px;
+	    border:0;
+	    background-color:transparent;
+	}
+	.panel-group .panel-heading + .panel-collapse > .panel-body {
+	  border-top: 0;
+	}
+
+
+	 .panel-group .panel-heading {
+	    padding: 0;
+	}
+	 .panel-group .panel-heading a {
+	    display: block;
+	    background: rgba(52, 73, 94, .7);
+	    color:#fff;
+	    padding:0 15px;
+	    line-height: 30px;
+	     text-decoration:none;
+	   position: relative;
+	   font-size: 13px;
+	   font-weight: normal;
+	}
+	 .panel-group .panel-heading a.collapsed {
+		background: #34495e; 
+		color:#fff;
+	}
+
+	 .panel-group .panel-heading a:after {
+	    content: '-';
+	    position: absolute;
+	    right: 20px;
+	}
+	 .panel-group .panel-heading a.collapsed:after {
+	    content: '+';
+	}
+	 .panel-group .panel-collapse {
+	    margin-top:0!important;
+	}
+	 .panel-group .panel-body  {
+		background: rgba(52, 73, 94, .7);
+		padding:10px;
+
+		img {
+			border:2px solid #fff;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			width:100%;
+		}
+
+		font-size: 12px;
+		line-height: 1.3;
+		color:#fff;
+
+		.see-more {
+			display: block;
+			color:#fff;
+		}
+	}
+	 .panel-group .panel {
+	  background-color: transparent;
+	}
+
+	.panel-group .panel-body p:last-child,
+	.panel-group .panel-body  ul:last-child,
+	.panel-group .panel-body  ol:last-child {
+	  margin-bottom: 0;
+	}
+}

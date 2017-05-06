@@ -1,29 +1,20 @@
 /* ------------------- Header: Main menu ------------------- */
 
-ul {
-	&.nav-horizontal {
-		> li {
-			display: inline-block;
-		}
+.menuzord-menu {
+	display: flex;
+	justify-content: space-between;
+	float: none;
+}
+
+.megamenu {
+	font-size: 13px;
+
+	a {
+		color: #3498db;
+	}
+	h5 {
+		font-size: 15px;
+		color: #fff;
 	}
 }
-.site-navigation {
-	background-color: #363f45;
-	ul {
-		> li {
-			padding: 0;
 
-			> a {
-				font-size: 13px;
-				font-weight: 600;
-				line-height: 22px;
-				letter-spacing: 0.5px;
-				text-transform: uppercase;
-				display: inline-block;
-				padding: 12px 20px;
-				color: #fff;
-			}
-
-		}
-	}
-}

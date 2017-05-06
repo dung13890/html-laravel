@@ -9,6 +9,13 @@
 			width: 940,
 			height: 528
 		});
+		
+	});
+
+	jQuery(document).ready(function(){  
+	   jQuery("#menuzord").menuzord({
+			indicatorFirstLevel: "<i class='fa fa-chevron-down'></i>"
+	   });
 	});
 
 	/* Window.load */

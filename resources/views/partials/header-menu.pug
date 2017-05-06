@@ -1,17 +1,187 @@
 //- Mixin
-mixin navLink(link, active, name)
-    li.nav-item
-        a.nav-link(
-            href=link 
-            class={active: current === '#{active}'}
-        ) !{name}
+mixin navLink
+	#menuzord.menuzord.red
+		a.menuzord-brand.hidden-lg.hidden-md(href='javascript:void(0)') NANOSI
+		ul.menuzord-menu
+			li.active
+				a(href='javascript:void(0)') Services
+				.megamenu
+					.megamenu-row
+						.col2
+							ul.list-unstyled
+								li
+									h5 Web development
+								li
+									a(href='#') Website design
+								li
+									a(href='#') ECommerce
+								li
+									a(href='#') Website Maintenance
+								li
+									a(href='#') Web Enhancements
+						.col2
+							ul.list-unstyled
+								li
+									h5 Hosting
+								li
+									a(href='#') Website Hosting
+								li
+									a(href='#') WordPress Hosting
+								li
+									a(href='#') SharePoint Hosting
+								li
+									a(href='#') VPS Hosting
+						.col2
+							ul.list-unstyled
+								li
+									h5 Design services
+								li
+									a(href='#') Graphics
+								li
+									a(href='#') Vectors
+								li
+									a(href='#') Business cards
+								li
+									a(href='#') Custom logo
+						.col2
+							ul.list-unstyled
+								li
+									h5 Web Marketing
+								li
+									a(href='#') Facebook
+								li
+									a(href='#') Search Engine Marketing
+								li
+									a(href='#') Email Marketing
+								li
+									a(href='#') Optimization (SEO)
+						.col2
+							ul.list-unstyled
+								li
+									h5 Email services
+								li
+									a(href='#') Personal Email
+								li
+									a(href='#') Business Email
+								li
+									a(href='#') Mobile Email
+								li
+									a(href='#') Microsoft Exchange
+						.col2
+							ul.list-unstyled
+								li
+									h5 Security services
+								li
+									a(href='#') SSL Certificates
+								li
+									a(href='#') Site Seal
+								li
+									a(href='#') Security and Performance
+								li
+									a(href='#') Privacy Seal
+			li
+				a(href='javascript:void(0)') Contact
+				.megamenu.megamenu-half-width
+					.megamenu-row
+						.col12
+							form(role='form')
+								.form-group
+									label(for='email') Email address
+									input#email.form-control(type='email', placeholder='Enter email')
+								.form-group
+									label(for='message') Message
+									textarea#message.form-control(rows='3', placeholder='Enter your message')
+								button.btn.btn-success(type='submit') Send message
+			li
+				a(href='javascript:void(0)') Login
+				.megamenu.megamenu-quarter-width
+					.megamenu-row
+						.col12
+							form(role='form')
+								.form-group
+									label(for='username') Username
+									input#username.form-control(type='email', placeholder='Username')
+								.form-group
+									label(for='exampleInputPassword1') Password
+									input#exampleInputPassword1.form-control(type='password', placeholder='Password')
+								.checkbox
+									label
+										input(type='checkbox')
+										|  Remember me
+								button.btn.btn-info(type='submit') Login
+			li
+				a(href='javascript:void(0)') Miscellaneous
+				.megamenu
+					.megamenu-row
+						.col3
+							.panel.panel-success
+								.panel-heading Panel heading without title
+								.panel-body
+									| Panel content
+						.col3
+							.panel.panel-info
+								.panel-heading Panel heading without title
+								.panel-body
+									| Panel content
+						.col3
+							.panel.panel-warning
+								.panel-heading Panel heading without title
+								.panel-body
+									| Panel content
+						.col3
+							.panel.panel-danger
+								.panel-heading Panel heading without title
+								.panel-body
+									| Panel content
+					.megamenu-row
+						.col3
+							button.btn.btn-primary.btn-block(type='button') Block level button
+							button.btn.btn-default.btn-block(type='button') Block level button
+						.col3
+							button.btn.btn-info.btn-block(type='button') Block level button
+							button.btn.btn-warning.btn-block(type='button') Block level button
+						.col3
+							button.btn.btn-success.btn-block(type='button') Block level button
+							button.btn.btn-danger.btn-block(type='button') Block level button
+						.col3
+							button.btn.btn-inverse.btn-block(type='button') Block level button
+							button.btn.btn-default.btn-block(type='button') Block level button
+					.megamenu-row
+						.col3
+							ul.list-group
+								li.list-group-item Cras justo odio
+								li.list-group-item Dapibus ac facilisis in
+								li.list-group-item Morbi leo risus
+						.col3
+							ul.list-group
+								li.list-group-item
+									span.badge 14
+									|                                       Cras justo odio
+								li.list-group-item
+									span.badge 10
+									|                                       Dapibus ac facilisis in
+								li.list-group-item
+									span.badge 7
+									|                                       Morbi leo risus
+						.col3
+							.list-group
+								a.list-group-item.active(href='#')
+									| Cras justo odio
+								a.list-group-item(href='#') Dapibus ac facilisis in
+								a.list-group-item(href='#') Morbi leo risus
+						.col3
+							ul.list-group
+								li.list-group-item.list-group-item-success Dapibus ac facilisis in
+								li.list-group-item.list-group-item-info Cras sit amet nibh libero
+								li.list-group-item.list-group-item-warning Porta ac consectetur ac
+					.megamenu-row
+						.col3
+							.alert.alert-success(role='alert') Well done! You successfully read this important alert message.
+						.col3
+							.alert.alert-info(role='alert') Heads up! This alert needs your attention, but it's not important.
+						.col3
+							.alert.alert-warning(role='alert') Warning! Better check yourself, you're not looking too good.
+						.col3
+							.alert.alert-danger(role='alert') Oh snap! Change a few things up and try submitting again.
 
-//- Navigation
-nav.site-navigation
-    ul.main-menu.nav-horizontal
-        +navLink('index.html', 'index', 'Home')
-        +navLink('shop-categories.html', 'shop-categories', 'Shop Categories')
-        +navLink('shop-category.html', 'shopcategory', 'Shop Category')
-        +navLink('shop-single.html', 'shop-single', 'Shop Single')
-        +navLink('blog.html', 'blog', 'Blog')
-        +navLink('blog-single.html', 'blog-single', 'Blog Single')
++navLink
