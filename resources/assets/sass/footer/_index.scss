@@ -55,29 +55,11 @@ footer .container {
     font-size: 13px;
   }
  }
-.social-icon {
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-    background-color: blue;
-    color: #fff;
-    text-align: center;
-    margin-right: 10px;
-    padding-top: 7px;
-    border-radius: 50%;
+
+footer input[type="text"] {
+  height: 36px;
 }
- .footer-social li{
-     float:left;
- }
- .linked-in{
-     background-color:#007bb6;
- }
- .facebook{
-     background-color:#3b5998;
- }
- .twitter{
-     background-color:#1da1f2;
- }
- .google{
-     background-color:#f63e28;
- }
+
+footer .social-icons.square {
+  float:left;
+}

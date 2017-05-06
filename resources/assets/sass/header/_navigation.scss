@@ -20,4 +20,22 @@
 
 .menuzord-menu > li > a {
 	padding: 15px;
+	border-left: 1px solid #2d3f51;
+	box-shadow: inset 1px 0 0 0 rgba(255,255,255,.1);
+}
+.menuzord-menu > li:first-child > a{
+	border-left:0;
+	box-shadow:none;
+}
+.menuzord-menu > li > .megamenu {
+	background:#fff;
+}
+
+.menuzord-tabs-nav > li > a, .menuzord-tabs-content {
+	border:1px solid #eee;
+}
+
+.megamenu h5 {
+	color: #34495e;
+	font-weight:normal;
 }
