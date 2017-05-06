@@ -7,7 +7,8 @@
 		/* SlidesJS Required: Initialize SlidesJS with a jQuery doc ready */
 		$('#slides').slidesjs({
 			width: 940,
-			height: 528
+			height: 528,
+			navigation: false
 		});
 		
 	});
