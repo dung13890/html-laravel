@@ -4,7 +4,16 @@ block main
     section#feature-area.feature-area
         div#slides
             each val in [1, 2, 3, 4]
-                img(src="public/images/slide-0" + val + ".png" alt="")
+                .item
+                    img(src="public/images/slide-0" + val + ".png" alt="")
+                    .caption(style='bottom: 0px;')
+                        h1 Contrary to popular belief
+                        p
+                            | There are many variations of passages of Lorem Ipsum available, but the mainajority have suffered alteration
+            a.slidesjs-previous.slidesjs-navigation(href='#')
+                i.fa.fa-angle-left(aria-hidden='true')
+            a.slidesjs-next.slidesjs-navigation(href='#')
+                i.fa.fa-angle-right(aria-hidden='true')
         .feature-area-collapse
             #accordion.panel-group
                 .panel.panel-default
@@ -48,41 +57,41 @@ block main
                     // /.panel-collapse
                 // /.panel
             // /.panel-group
->>>>>>> wireframe Slider, Navigation, Footer
     section#home-banner.home-banner
         div.row
-            div.banner.col-xs-12.col-sm-3.col-md-3.col-lg-3
-                div.banner-image
-                    a(href="#")
-                        img(src="public/images/banner-11.jpg" alt="")
-                div.banner-content
-                    h4.banner-title
-                        a(href="#") Banner Title
-                    p.banner-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            div.banner.col-xs-12.col-sm-3.col-md-3.col-lg-3
-                div.banner-image
-                    a(href="#")
-                        img(src="public/images/banner-12.jpg" alt="")
-                div.banner-content
-                    h4.banner-title
-                        a(href="#") Banner Title
-                    p.banner-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            div.banner.col-xs-12.col-sm-3.col-md-3.col-lg-3
-                div.banner-image
-                    a(href="#")
-                        img(src="public/images/banner-13.jpg" alt="")
-                div.banner-content
-                    h4.banner-title
-                        a(href="#") Banner Title
-                    p.banner-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            div.banner.col-xs-12.col-sm-3.col-md-3.col-lg-3
-                div.banner-image
-                    a(href="#")
-                        img(src="public/images/banner-14.jpg" alt="")
-                div.banner-content
-                    h4.banner-title
-                        a(href="#") Banner Title
-                    p.banner-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .col-md-12
+                div.banner.col-xs-12.col-sm-3.col-md-3.col-lg-3
+                    div.banner-image
+                        a(href="#")
+                            img(src="public/images/banner-11.jpg" alt="")
+                    div.banner-content
+                        h4.banner-title
+                            a(href="#") Banner Title
+                        p.banner-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                div.banner.col-xs-12.col-sm-3.col-md-3.col-lg-3
+                    div.banner-image
+                        a(href="#")
+                            img(src="public/images/banner-12.jpg" alt="")
+                    div.banner-content
+                        h4.banner-title
+                            a(href="#") Banner Title
+                        p.banner-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                div.banner.col-xs-12.col-sm-3.col-md-3.col-lg-3
+                    div.banner-image
+                        a(href="#")
+                            img(src="public/images/banner-13.jpg" alt="")
+                    div.banner-content
+                        h4.banner-title
+                            a(href="#") Banner Title
+                        p.banner-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                div.banner.col-xs-12.col-sm-3.col-md-3.col-lg-3
+                    div.banner-image
+                        a(href="#")
+                            img(src="public/images/banner-14.jpg" alt="")
+                    div.banner-content
+                        h4.banner-title
+                            a(href="#") Banner Title
+                        p.banner-desc Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
                             
