@@ -11,7 +11,9 @@
 }
 
 @media screen and (max-width: 768px) {
-	
+	.menuzord-responsive .menuzord-menu.scrollable {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 600px) {

@@ -8,6 +8,7 @@ Social
     li {
         display: inline-block;
         line-height: inherit;
+        margin: 0 0 0 3px;
         a {
             color: #fff;
             font-size: 14px;
@@ -16,7 +17,6 @@ Social
             width: 30px;
             height: 30px;
             display: inline-block;
-            margin: 0 0 0 3px;
             border-radius: 100%;
             background-color: #acacac;
             i {
@@ -42,6 +42,13 @@ Social
             a {
                 background-color: #bf0006;
             }
+        }
+    }
+    &.square {
+        float:right;
+        margin-bottom: 10px;
+        li a{
+            border-radius:0;
         }
     }
 }

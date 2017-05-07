@@ -1,8 +1,24 @@
 header#site-header.site-header
-    div.header-main
-        div.row
-            div.col-sm-6.col-md-6.col-lg-6
-                include header-logo
-            div.col-sm-6.col-md-6.col-lg-6
-                include header-actions
-    include header-menu
+	div.header-main
+		div.row
+			div.col-sm-6.col-md-6.col-lg-6
+				include header-logo
+			div.col-sm-6.col-md-6.col-lg-6
+				.row
+					.col-md-12
+						.social-icons.square
+							li.facebook
+								a(href='#')
+									i.fa.fa-facebook(aria-hidden='true')
+							li.twitter
+								a(href='#')
+									i.fa.fa-twitter(aria-hidden='true')
+							li.pinterest
+								a(href='#')
+									i.fa.fa-pinterest(aria-hidden='true')
+							li.google-plus
+								a(href='#')
+									i.fa.fa-google-plus(aria-hidden='true')
+					.col-md-12
+						include header-actions
+	include header-menu
