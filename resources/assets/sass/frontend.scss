@@ -175,6 +175,9 @@ section.feature-area {
 
 .slidesjs-container {
 	height:446px!important;
+	@media (max-width: 767px) {
+      height:201px!important;
+    }
 }
 
 .caption {
@@ -276,6 +279,9 @@ section.feature-area {
 	line-height:1.4;
 }
 .present h1 {
+	@media (max-width: 767px) {
+      font-size:22px;
+    }
 	font-weight:normal;
 	color:#34495e;
 }

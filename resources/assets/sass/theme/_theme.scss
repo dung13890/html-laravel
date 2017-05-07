@@ -56,6 +56,9 @@ section {
     }
   }
   .slidesjs-pagination {
+    @media (max-width: 767px) {
+      display: none!important;
+    }
     margin: -80px auto 0;
     width: 25px;
     z-index: 10;
